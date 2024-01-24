@@ -1,0 +1,39 @@
+.dark-mode {
+    background-color: darken($grisOscuro, $amount: 10);
+
+    p {
+        color: $blanco;
+    }
+    
+    a, h1 , h2 ,h3, h4 {
+        color: $gris;
+    }
+
+    .anuncio{
+        background-color: $grisOscuro;
+        border: 1px solid $grisOscuro;
+
+        .precio {
+            color: $verde;
+        }
+
+        .icono {
+            filter: invert(100%);
+        }
+    }
+
+    .texto-nosotros blockquote {
+    
+        color: $blanco;
+    }
+}
+
+.alerta {
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    &.error{
+        background-color: $rojo;
+    }
+
+}
